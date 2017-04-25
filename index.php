@@ -15,10 +15,10 @@
 <div style="z-index: -1;position: absolute;top:0px;left:-30px;width:100%;height:130px; background-color: black;"></div>
 
 <ul>
-  <li><a class="active" href="index.html">Home</a></li>
-  <li><a href="subsites/designer/index.html">Design a Sandwich!</a></li>
-  <li><a href="subsites/randomizer/index.html">Randomize a Sandwich!</a></li>
-  <li><a href="subsites/leaderboards/index.html">Leaderboards</a></li>
+  <li><a class="active" href="index.php">Home</a></li>
+  <li><a href="subsites/designer/index.php">Design a Sandwich!</a></li>
+  <li><a href="subsites/randomizer/index.php">Randomize a Sandwich!</a></li>
+  <li><a href="subsites/leaderboards/index.php">Leaderboards</a></li>
 </ul>
 
 <h2> "Sandwich Du Jour" </h2>
