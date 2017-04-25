@@ -22,6 +22,12 @@
 </ul>
 
 <h2> "Sandwich Du Jour" </h2>
+
+
+<?php
+echo "My first PHP script!";
+?> 
+
 </body>
 
 </html>
