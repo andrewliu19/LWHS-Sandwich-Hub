@@ -23,89 +23,90 @@
 
 <p> Sandwich Designer </p>
 
-<form>
+<form action="submit.php" method="get">
 
 	
   <h3>Bread</h3>
   <label>
-    <input type="radio" class="radio" value="1" name="fooby[1][]" />Dutch Crunch</label>
+    <input type="radio" class="radio" value="dutchCrunch" name="bread[]" />Dutch Crunch</label>
   <label>
-    <input type="radio" class="radio" value="1" name="fooby[1][]" />Sourdough Roll</label>
+    <input type="radio" class="radio" value="sourdoughRoll" name="bread[]" />Sourdough Roll</label>
   <label>
-    <input type="radio" class="radio" value="1" name="fooby[1][]" />Ciabatta Roll</label>
+    <input type="radio" class="radio" value="ciabattaRoll" name="bread[]" />Ciabatta Roll</label>
   <label>
-    <input type="radio" class="radio" value="1" name="fooby[1][]" />Sliced Wheat</label>
+    <input type="radio" class="radio" value="slicedWheat" name="bread[]" />Sliced Wheat</label>
   <label>
-    <input type="radio" class="radio" value="1" name="fooby[1][]" />Sliced Sourdough</label>
+    <input type="radio" class="radio" value="slicedSourdough" name="bread[]" />Sliced Sourdough</label>
   <label>
-    <input type="radio" class="radio" value="1" name="fooby[1][]" />Gluten Free</label>
+    <input type="radio" class="radio" value="glutenFree" name="bread[]" />Gluten Free</label>
 	
 
  <h3>Meat</h3>
   <label>
-    <input type="radio" class="radio" value="1" name="fooby[2][]" />Turkey</label>
+    <input type="radio" class="radio" value="turkey" name="meat[]" />Turkey</label>
   <label>
-    <input type="radio" class="radio" value="1" name="fooby[2][]" />Roast Beef</label>
+    <input type="radio" class="radio" value="roastBeef" name="meat[]" />Roast Beef</label>
   <label>
-    <input type="radio" class="radio" value="1" name="fooby[2][]" />Pastrami</label>
+    <input type="radio" class="radio" value="pastrami" name="meat[]" />Pastrami</label>
  <label>
-    <input type="radio" class="radio" value="1" name="fooby[2][]" />Salami</label>
+    <input type="radio" class="radio" value="salami" name="meat[]" />Salami</label>
  <label>
-    <input type="radio" class="radio" value="1" name="fooby[2][]" />Ham</label>
+    <input type="radio" class="radio" value="ham" name="meat[]" />Ham</label>
  <label>
-    <input type="radio" class="radio" value="1" name="fooby[2][]" />Tuna Salad</label>
+    <input type="radio" class="radio" value="tunaSalad name="meat[]" />Tuna Salad</label>
  <label>
-    <input type="radio" class="radio" value="1" name="fooby[2][]" />Egg Salad</label>
+    <input type="radio" class="radio" value="eggSalad" name="meat[]" />Egg Salad</label>
 	
 <h3>Cheese</h3>
  <label>
-    <input type="radio" class="radio" value="1" name="fooby[3][]" />Provolone</label>
+    <input type="radio" class="radio" value="provolone" name="cheese[]" />Provolone</label>
 <label>
-    <input type="radio" class="radio" value="1" name="fooby[3][]" />Swiss</label>
+    <input type="radio" class="radio" value="swiss" name="cheese[]" />Swiss</label>
 <label>
-    <input type="radio" class="radio" value="1" name="fooby[3][]" />Chedder</label>
+    <input type="radio" class="radio" value="cheddar" name="cheese[]" />Cheddar</label>
 <label>
-    <input type="radio" class="radio" value="1" name="fooby[3][]" />Fresh Mozzarella</label>
+    <input type="radio" class="radio" value="freshMozzarella" name="cheese[]" />Fresh Mozzarella</label>
 <h3>Condiments</h3>
 <label>
-    <input type="radio" class="radio" value="1" name="fooby[4][]" />Mayo</label>
+    <input type="radio" class="radio" value="mayo" name="condiments[]" />Mayo</label>
 <label>
-    <input type="radio" class="radio" value="1" name="fooby[4][]" />Mustard</label>
+    <input type="radio" class="radio" value="mustard" name="condiments[]" />Mustard</label>
 <label>
-    <input type="radio" class="radio" value="1" name="fooby[4][]" />Pesto</label>
+    <input type="radio" class="radio" value="pesto" name="condiments[]" />Pesto</label>
 <label>
-    <input type="radio" class="radio" value="1" name="fooby[4][]" />Veganaise</label>
+    <input type="radio" class="radio" value="veganaise" name="condiments[]" />Veganaise</label>
 <label>
-    <input type="radio" class="radio" value="1" name="fooby[4][]" />Red Vin/Olive Oil</label>
+    <input type="radio" class="radio" value="redVinOliveOil" name="condiments[]" />Red Vin/Olive Oil</label>
 <label>
-    <input type="radio" class="radio" value="1" name="fooby[4][]" />Balsalmic Vin/Olive Oil</label>
+    <input type="radio" class="radio" value="balsalmicOilOliveOil" name="condiments[]" />Balsalmic Vin/Olive Oil</label>
 <h3>Toppings</h3>
 <label>
-    <input type="checkbox" class="radio" value="1" name="fooby" />Roasted Red Peppers</label>
+    <input type="checkbox" class="radio" value="roastedRedPeppers" name="toppings[]" />Roasted Red Peppers</label>
 <label>
-    <input type="checkbox" class="radio" value="1" name="fooby" />Pepperocini</label>
+    <input type="checkbox" class="radio" value="pepperocini" name="toppings[]" />Pepperocini</label>
 <label>
-    <input type="checkbox" class="radio" value="1" name="fooby" />Pickles</label>
+    <input type="checkbox" class="radio" value="pickles" name="toppings[]" />Pickles</label>
 <label>
-    <input type="checkbox" class="radio" value="1" name="fooby" />Basil</label>
+    <input type="checkbox" class="radio" value="basil" name="toppings[]" />Basil</label>
 <label>
-    <input type="checkbox" class="radio" value="1" name="fooby" />Lettuce</label>
+    <input type="checkbox" class="radio" value="lettuce" name="toppings[]" />Lettuce</label>
 <label>
-    <input type="checkbox" class="radio" value="1" name="fooby" />Tomatoes</label>
+    <input type="checkbox" class="radio" value="tomatoes" name="toppings[]" />Tomatoes</label>
 <label>
-    <input type="checkbox" class="radio" value="1" name="fooby" />Hummus</label>
+    <input type="checkbox" class="radio" value="hummus" name="toppings[]" />Hummus</label>
 <label>
-    <input type="checkbox" class="radio" value="1" name="fooby" />Red Onions</label>
+    <input type="checkbox" class="radio" value="redonions" name="toppings[]" />Red Onions</label>
 <label>
-    <input type="checkbox" class="radio" value="1" name="fooby" />Jalapenos</label>
+    <input type="checkbox" class="radio" value="jalapenos" name="toppings[]" />Jalapenos</label>
 <label>
-    <input type="checkbox" class="radio" value="1" name="fooby" />Artichoke Hearts</label>
+    <input type="checkbox" class="radio" value="artichokeHearts" name="toppings[]" />Artichoke Hearts</label>
 <h3>Extras</h3>
 <label>
-    <input type="checkbox" class="radio" value="1" name="fooby" />Avocado</label>
+    <input type="checkbox" class="radio" value="avocado" name="extras[]" />Avocado</label>
 <label>
-    <input type="checkbox" class="radio" value="1" name="fooby" />Bacon</label>
+    <input type="checkbox" class="radio" value="bacon" name="extras[]" />Bacon</label>
 <button type="button">Print</button> 
+<input type="submit" value="submit">
 <form>
 </body>
 
