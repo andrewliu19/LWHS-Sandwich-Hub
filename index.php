@@ -23,11 +23,14 @@
 
 <h2> "Sandwich Du Jour" </h2>
 
-
-<?php
-echo "My first PHP script!";
-?> 
-
 </body>
 
 </html>
+
+
+
+<form action="review.php" method="post" />
+Title of Review: <input type="text" name="title"><br>
+Review: <input type="text" name="content"><br>
+<button type"Submit">Submit</button>
+</form>
