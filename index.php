@@ -34,3 +34,4 @@ Title of Review: <input type="text" name="title"><br>
 Review: <input type="text" name="content"><br>
 <button type"Submit">Submit</button>
 </form>
+<a href="viewreview.php">View Reviews!</a>
