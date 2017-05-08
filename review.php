@@ -27,6 +27,8 @@ if ($mysqli->connect_errno) {
 
 $result = $mysqli->query($query);
 
+$mysqli->close();
+
 // print_r($result);
 
 
