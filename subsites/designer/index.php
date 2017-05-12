@@ -21,64 +21,70 @@
   <li><a href="../leaderboards/index.php">Leaderboards</a></li>
 </ul>
 
-<p> Sandwich Designer </p>
+<h3> Sandwich Designer </h3>
 
 <form action="submit.php" method="post">
 Name: <input type="text" name="name"><br>
 	
   <h3>Bread</h3>
   <label>
-    <input type="radio" class="radio" value="Dutch Crunch, " name="bread[]" />Dutch Crunch</label>
+    <input type="radio" class="radio" value="Dutch Crunch" name="bread[]" />Dutch Crunch</label>
   <label>
-    <input type="radio" class="radio" value="Sourdough Roll, " name="bread[]" />Sourdough Roll</label>
+    <input type="radio" class="radio" value="Sourdough Roll" name="bread[]" />Sourdough Roll</label>
   <label>
-    <input type="radio" class="radio" value="Ciabatta Roll, " name="bread[]" />Ciabatta Roll</label>
+    <input type="radio" class="radio" value="Ciabatta Roll" name="bread[]" />Ciabatta Roll</label>
   <label>
-    <input type="radio" class="radio" value="Sliced Wheat, " name="bread[]" />Sliced Wheat</label>
+    <input type="radio" class="radio" value="Sliced Wheat" name="bread[]" />Sliced Wheat</label>
   <label>
-    <input type="radio" class="radio" value="Sliced Sourdough, " name="bread[]" />Sliced Sourdough</label>
+    <input type="radio" class="radio" value="Sliced Sourdough" name="bread[]" />Sliced Sourdough</label>
   <label>
-    <input type="radio" class="radio" value="Gluten Free, " name="bread[]" />Gluten Free</label>
+    <input type="radio" class="radio" value="Gluten Free" name="bread[]" />Gluten Free</label>
 	
 
  <h3>Meat</h3>
   <label>
-    <input type="radio" class="radio" value="Turkey, " name="meat[]" />Turkey</label>
+    <input type="radio" class="radio" value="Turkey" name="meat[]" />Turkey</label>
   <label>
-    <input type="radio" class="radio" value="Roast Beef, " name="meat[]" />Roast Beef</label>
+    <input type="radio" class="radio" value="Roast Beef" name="meat[]" />Roast Beef</label>
   <label>
-    <input type="radio" class="radio" value="Pastrami, " name="meat[]" />Pastrami</label>
+    <input type="radio" class="radio" value="Pastrami" name="meat[]" />Pastrami</label>
  <label>
-    <input type="radio" class="radio" value="Salami, " name="meat[]" />Salami</label>
+    <input type="radio" class="radio" value="Salami" name="meat[]" />Salami</label>
  <label>
-    <input type="radio" class="radio" value="Ham, " name="meat[]" />Ham</label>
+    <input type="radio" class="radio" value="Ham" name="meat[]" />Ham</label>
  <label>
-    <input type="radio" class="radio" value="Tuna Salad, " name="meat[]" />Tuna Salad</label>
+    <input type="radio" class="radio" value="Tuna Salad" name="meat[]" />Tuna Salad</label>
  <label>
-    <input type="radio" class="radio" value="Egg Salad, " name="meat[]" />Egg Salad</label>
+    <input type="radio" class="radio" value="Egg Salad" name="meat[]" />Egg Salad</label>
+  <label>
+    <input type="radio" class="radio" value="None" name="meat[]" />None</label>
 	
 <h3>Cheese</h3>
  <label>
-    <input type="radio" class="radio" value="Provolone, " name="cheese[]" />Provolone</label>
+    <input type="radio" class="radio" value="Provolone" name="cheese[]" />Provolone</label>
 <label>
-    <input type="radio" class="radio" value="Swiss, " name="cheese[]" />Swiss</label>
+    <input type="radio" class="radio" value="Swiss" name="cheese[]" />Swiss</label>
 <label>
-    <input type="radio" class="radio" value="Cheddar, " name="cheese[]" />Cheddar</label>
+    <input type="radio" class="radio" value="Cheddar" name="cheese[]" />Cheddar</label>
 <label>
-    <input type="radio" class="radio" value="Fresh Mozzarella, " name="cheese[]" />Fresh Mozzarella</label>
+    <input type="radio" class="radio" value="Fresh Mozzarella" name="cheese[]" />Fresh Mozzarella</label>
+<label>
+    <input type="radio" class="radio" value="None" name="cheese[]" />None</label>
 <h3>Condiments</h3>
 <label>
-    <input type="radio" class="radio" value="Mayo, " name="condiments[]" />Mayo</label>
+    <input type="radio" class="radio" value="Mayo" name="condiments[]" />Mayo</label>
 <label>
-    <input type="radio" class="radio" value="Mustard, " name="condiments[]" />Mustard</label>
+    <input type="radio" class="radio" value="Mustard" name="condiments[]" />Mustard</label>
 <label>
-    <input type="radio" class="radio" value="Pesto, " name="condiments[]" />Pesto</label>
+    <input type="radio" class="radio" value="Pesto" name="condiments[]" />Pesto</label>
 <label>
-    <input type="radio" class="radio" value="Veganaise, " name="condiments[]" />Veganaise</label>
+    <input type="radio" class="radio" value="Veganaise" name="condiments[]" />Veganaise</label>
 <label>
-    <input type="radio" class="radio" value="Red Vin/Olive Oil, " name="condiments[]" />Red Vin/Olive Oil</label>
+    <input type="radio" class="radio" value="Red Vin/Olive Oil" name="condiments[]" />Red Vin/Olive Oil</label>
 <label>
-    <input type="radio" class="radio" value="Balsalmic Oil/Olive Oil, " name="condiments[]" />Balsalmic Vin/Olive Oil</label>
+    <input type="radio" class="radio" value="Balsalmic Oil/Olive Oil" name="condiments[]" />Balsalmic Vin/Olive Oil</label>
+<label>
+    <input type="radio" class="radio" value="None" name="condiments[]" />None</label>
 <h3>Toppings</h3>
 <label>
     <input type="checkbox" class="radio" value="Roasted Red Peppers, " name="toppings[]" />Roasted Red Peppers</label>

@@ -1,4 +1,25 @@
 <!DOCTYPE html>
+<?php
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "sandwich";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "SELECT ID, name, bread, meat, cheese, condiments, toppings, extras FROM submissions";
+
+$records=$conn->query($sql);
+
+$conn->close();
+
+?>
 <html>
 
 <head>
@@ -21,7 +42,34 @@
   <li><a class="active" href="index.php">Leaderboards</a></li>
 </ul>
 
-<p> This is sammich huhb </p>
+<table width="1000" border="10" cellpadding="10" cellspacing="1">
+	<tr>
+	<th>ID</th>	
+	<th>Name</th>
+	<th>Bread</th>
+	<th>Meat</th>
+	<th>Cheese</th>
+	<th>Condiments</th>
+	<th>Toppings</th>
+	<th>Extras</th>
+	<tr>
+
+	<?php
+	while ($submissions=$records->fetch_assoc()) {
+		echo "<tr>";
+		echo "<td>".$submissions['ID']."</td>";
+		echo "<td>".$submissions['name']."</td>";
+		echo "<td>".$submissions['bread']."</td>";
+		echo "<td>".$submissions['meat']."</td>";
+		echo "<td>".$submissions['cheese']."</td>";
+		echo "<td>".$submissions['condiments']."</td>";
+		echo "<td>".$submissions['toppings']."</td>";
+		echo "<td>".$submissions['extras']."</td>";
+		echo "</tr>";
+	}
+	?>
+	</table>
+
 </body>
 
 </html>
