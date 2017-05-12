@@ -12,10 +12,11 @@ $mysqli = new mysqli($db_host, $db_user, $db_pass, $db_name);
 // $title = $mysqli->real_escape_string($_POST['title']);
 // $content = $mysqli->real_escape_string($_POST['content']);
 
-$title = $_POST["title"];
-$content = $_POST["content"];
+$rating = implode($_POST["rating"]);
+$title = $mysqli->real_escape_string($_POST["title"]);
+$content = $mysqli->real_escape_string($_POST["content"]);
 
-$query = "INSERT INTO reviews (review_title, review_content, review_date) VALUES ('{$title}', '{$content}', FROM_UNIXTIME({$time}))";
+$query = "INSERT INTO reviews (rating, review_title, review_content, review_date) VALUES ('{$rating}', '{$title}', '{$content}', FROM_UNIXTIME({$time}))";
 
 if ($mysqli->connect_errno) {
 	printf("Connect failed: %s/n", $mysqli->connect_error);
