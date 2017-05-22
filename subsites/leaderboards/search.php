@@ -12,8 +12,20 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
+$search = $conn->real_escape_string($_POST["search"]);
+$order = implode($_POST["order"]);
+if (!isset($_POST["searchOptionMeat"])) {
+	$searchOptionMeat = "";
+} else {
+	$searchOptionMeat = implode($_POST["searchOptionMeat"]);
+}
+if (!isset($_POST["searchOptionCheese"])) {
+	$searchOptionCheese = "";
+} else {
+	$searchOptionCheese = implode($_POST["searchOptionCheese"]);
+}
 
-$sql = "SELECT ID, name, bread, meat, cheese, condiments, toppings, extras, dates FROM submissions ORDER BY `ID` DESC";
+$sql = "SELECT ID, name, bread, meat, cheese, condiments, toppings, extras, dates FROM submissions WHERE (name LIKE '%" . $search .  "%' OR bread LIKE '%" . $search."%' OR meat LIKE '%" . $search."%' OR cheese LIKE '%" . $search."%' OR condiments LIKE '%" . $search."%' OR toppings LIKE '%" . $search."%' OR extras LIKE '%" . $search."%' OR dates LIKE '%" . $search."%') AND (meat LIKE '%" . $searchOptionMeat."%') AND (cheese LIKE '%" . $searchOptionCheese."%')  ORDER BY `ID` {$order} ";
 
 $records=$conn->query($sql);
 
@@ -44,17 +56,45 @@ $conn->close();
 
 <br>
 <form action= "search.php" method="post" />
-<b style="font-family: Snell Roundhand; font-size: 25px">Search:</b> <input type="text" name="search">
+<b style="font-family: Snell Roundhand; font-size: 25px">Search:</b>
+<input type="text" name="search" value= <?php echo "\"".$_POST["search"]."\"" ?>>
 
 <label>
-    <input type="checkbox" class="radio" value="None" name="searchOptionMeat[]" />Vegetarian?</label>
+    <input type="checkbox" class="radio" value="None" name="searchOptionMeat[]" <?php if (!isset($_POST["searchOptionMeat"])) {
+	echo "";
+} else {
+	echo "checked";
+}
+    ?> />Vegetarian?</label>
 <label>
-    <input type="checkbox" class="radio" value="None" name="searchOptionCheese[]" />Lactose-Intolerant?</label><br/><br>
+
+    <input type="checkbox" class="radio" value="None" name="searchOptionCheese[]" <?php 
+    if (!isset($_POST["searchOptionCheese"])) {
+	echo "";
+} else {
+	echo "checked";
+}
+?>
+    />Lactose-Intolerant?</label><br/><br>
+
     <b style="font-family: Snell Roundhand; font-size: 25px">Order by:</b><br>
 <label>
-    <input type="radio" class="radio" value="DESC" name="order[]" checked/>Most recent to oldest sandwiches</label><br>
+    <input type="radio" class="radio" value="DESC" name="order[]" <?php if ($order == "DESC") {
+	echo "checked";
+} else {
+	echo "";
+}
+?>
+    />Most recent to oldest sandwiches</label><br>
 <label>
-    <input type="radio" class="radio" value="ASC" name="order[]" />Oldest to most recent sandwiches</label><br/><br>
+    <input type="radio" class="radio" value="ASC" name="order[]" <?php if ($order == "ASC") {
+	echo "checked";
+} else {
+	echo "";
+}
+?>
+    />Oldest to most recent sandwiches</label><br/><br>
+
 <button type"Submit">Search and reorder</button>
 </form>
 <br>
