@@ -1,14 +1,13 @@
 <?php
-// Basic word filter used to replace any explicit words (found in the array "$filter_terms" below) with the word "ASTERISK"
 function wordFilter($text)
 {
-    $filter_terms = array('/\bass(e?)?\b/i', '/shit(e|t?)?/i', '/fuck/i', '/bitch(e?)?/i', '/penis(e?)?/i', '/vagina/i', '/dick/i');
-    $filtered_text = preg_replace($filter_terms, 'ASTERISK', $text);
+    $filter_terms = array('/\bass(e?)?\b/i', '/shit(e|t?)?/i', '/fuck/i', '/slut/i', '/bitch(e?)?/i', '/penis(e?)?/i', '/vagina/i', '/dick/i');
+    $filtered_text = preg_replace($filter_terms, 'Peter', $text);
     return $filtered_text;
 }
 
-//Random string generator to add a random number to the end of an already-used name, to help remove name repeats and add specificity
 //Original random String code found at: http://stackoverflow.com/questions/15821532/get-current-auto-increment-value-for-any-table
+
 function generateRandomString($length = 4) {
     $characters = '0123456789';
     $charactersLength = strlen($characters);
@@ -19,38 +18,32 @@ function generateRandomString($length = 4) {
     return $randomString;
 }
 
-//Variables for the bread, meat, cheese, condiments, and toppings/extras chosen on the page before
 $bread = implode($_POST["bread"]);
 $meat = implode($_POST["meat"]);
 $cheese = implode($_POST["cheese"]);
 $condiments = implode($_POST["condiments"]);
-
-//Checks to see if the "none" checkbox was selected on the toppings section, removing any other option selected, if applicable
 if (preg_match('/None/',(implode($_POST["toppings"])))){
 	$toppings = "None";
 } else {
 	$toppings = implode($_POST["toppings"]);
 }
-
-//Checks to see if the "none" checkbox was selected on the extras section, removing any other option selected, if applicable
 if (preg_match('/None/',(implode($_POST["extras"])))){
 	$extras = "None";
 } else {
 	$extras = implode($_POST["extras"]);
 }
-
-//login info for MySQL to collect/submit information from the database
 $db_user = 'root';
 $db_pass = '';
 $db_name = 'sandwich';
 $db_host = 'localhost';
 
+// $db_user = 'isaacjakeandrew';
+// $db_pass = 'computing2!';
+// $db_name = 'sandwich_c2';
+// $db_host = 'mysql.makerstickers.com';
 
 $mysqli = new mysqli($db_host, $db_user, $db_pass, $db_name);
 
-//Checks to see if the name submitted on the page before was already in the database, and if so, it prints an error and gives
-//the sandwich a random number at the end. If there was no name submitted, then the "$name" variable is defined as a string reading
-//"Unnamed Sandwich" with a random string of numbers at the end.
 $name = wordFilter($_POST["name"]);
 if (strlen($_POST["name"])<1) {
 	$name = "Unnamed Sandwich ".generateRandomString();
@@ -70,29 +63,33 @@ if (strlen($_POST["name"])<1) {
         }
 }
 
-//Sanitizes the name to make sure that there isn't any malicious code being inputted into the database
 $nameForDB = $mysqli->real_escape_string($name);
 
-//Adds the variables collected before into the database
 $query = "INSERT INTO submissions (name, bread, meat, cheese, condiments, toppings, extras) VALUES ('{$nameForDB}', '{$bread}', '{$meat}', '{$cheese}', '{$condiments}', '{$toppings}', '{$extras}')";
 
-//Creates a URL compatible name for the sandwiches review page, which can be later used in the Leaderboards page
-//to look at the specific review page for the sandwich
 $tablelName = htmlspecialchars($name);
+
 $createTable="CREATE TABLE `{$tablelName}` LIKE reviews";
 
-//Error message
+
 if ($mysqli->connect_errno) {
 	printf("Connect failed: %s/n", $mysqli->connect_error);
 	exit();
 }
 
-//Submits the query into MySQL to process and actually do what was said in the "$query" and "$createTable" variables
 $result = $mysqli->query($query);
 $result2 = $mysqli->query($createTable);
+// $result3 = $mysqli->query($userNameErr);
+
 $mysqli->close();
 
-//Lists all the options that you submitted in the page before, and tells you any errors present.
+
+// if (strlen($_POST["name"])<1) {
+// 	$name = "Unnamed Sandwich ".generateRandomString();
+// } else {
+// 	$name = wordFilter($_POST["name"]);
+// }
+
 echo "<h3>You submitted the following:<h3>";
 echo "<h2>Name:</h2>";
 echo '<b style="color:red">'.$userNameErr.'</b><br>';
