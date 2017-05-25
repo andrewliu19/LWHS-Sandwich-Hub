@@ -8,12 +8,12 @@
 </head>
 
 <body>
+<!-- Title and sandwich logo -->
 <img src="images/sandwich.png" alt="Sandwich" height="50" width="90">
-
-
 <h1> Sandwich Hub </h1>
 <div style="z-index: -1;position: absolute;top:0px;left:-30px;width:100%;height:130px; background-color: black;"></div>
 
+<!-- Header of website -->
 <ul>
   <li><a class="active" href="index.php">Home</a></li>
   <li><a href="subsites/designer/index.php">Design a Sandwich!</a></li>

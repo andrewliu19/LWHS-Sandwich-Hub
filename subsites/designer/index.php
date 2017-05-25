@@ -22,7 +22,7 @@
 </ul>
 
 <h3 style="color:black"> Sandwich Designer </h3>
-
+<!-- The checboxes used to design the sandwiches, with all the information being sent into "submit.php" for depositing into a database -->
 <form action="submit.php" method="post">
 <h3 style="color:red">Name:</h3> <input type="text" name="name"><br>
 	
