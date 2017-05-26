@@ -1,87 +1,36 @@
 <?php
 
-function array_random($arr, $num = 1) {
-    shuffle($arr);
-    
-    $r = array();
-    for ($i = 0; $i < $num; $i++) {
-        $r[] = $arr[$i];
-    }
-    return $num == 1 ? $r[0] : $r;
+function array_random($arr, $num) {
+	shuffle($arr);
+	$r = array();
+	for($i = 0; $i < $num; $i++) {
+	$r[] = $arr[$i];
+	}
+	return $num == 1 ? $r[0] : $r;
 }
 
-$a = array("Dutch Crunch", "Sourdough Roll", "Ciabatta Roll", "Sliced Wheat", "Sliced Sourdough",   "Gluten Free");
-print_r(array_random($a));
-print_r(array_random($a, 2));
+print("<h3>Bread:</h3>");
+$a = array("Dutch Crunch, <br>", "Sourdough Roll, <br>", "Ciabatta Roll, <br>", "Sliced Wheat, <br>", "Sliced Sourdough, <br>", "Gluten Free, <br>");
+print(array_random($a,1));
 
-function array_random($arr, $num = 1) {
-    shuffle($arr);
-    
-    $r = array();
-    for ($i = 0; $i < $num; $i++) {
-        $r[] = $arr[$i];
-    }
-    return $num == 1 ? $r[0] : $r;
-}
+print("<h3>Meat:</h3>");
+$b = array("Turkey, <br>", "Roast Beef, <br>", "Pastrami, <br>", "Salami, <br>", "Ham, <br>", "Tuna Salad, <br>", "Egg Salad, <br>", "None, <br>");
+print(array_random($b,1));
 
-$a = array("Turkey", "Roast Beef", "Pastrami", "Salami", "Ham", "Tuna Salad", "Egg Salad", "None");
-print_r(array_random($a));
-print_r(array_random($a, 2));
+print("<h3>Cheese:</h3>");
+$c = array("Provolone, <br>", "Swiss, <br>", "Cheddar, <br>", "Fresh Mozzarella, <br>", "None, <br>");
+print(array_random($c,1));
 
-function array_random($arr, $num = 1) {
-    shuffle($arr);
-    
-    $r = array();
-    for ($i = 0; $i < $num; $i++) {
-        $r[] = $arr[$i];
-    }
-    return $num == 1 ? $r[0] : $r;
-}
+print("<h3>Condiments:</h3>");
+$d = array("Mayo, <br>",  "Mustard, <br>", "Pesto, <br>",  "Veganaise, <br>",  "Red Vin/Olive Oil, <br>",  "Balsalmic Vin/Olive Oil, <br>",  "None, <br>");
+print(array_random($d,1));
 
-$a = array("Provolone", "Swiss", "Cheddar", "Fresh Mozzarella", "None");
-print_r(array_random($a));
-print_r(array_random($a, 2));
+print("<h3>Toppings:</h3>");
+$e = array("Roasted Red Peppers, ", "Pepperocini, ",  "Pickles, ",  "Basil, ",  "Lettuce, ",  "Tomatoes, ",  "Hummus, ",  "Red Onions, ",  "Jalapenos, ",  "Artichoke Hearts ");
+print(implode(array_random($e, rand(1,7)))."<br>");
 
-function array_random($arr, $num = 1) {
-    shuffle($arr);
-    
-    $r = array();
-    for ($i = 0; $i < $num; $i++) {
-        $r[] = $arr[$i];
-    }
-    return $num == 1 ? $r[0] : $r;
-}
-
-$a = array("Mayo",  "Mustard", "Pesto",  "Veganaise",  "Red Vin/Olive Oil",  "Balsalmic Vin/Olive Oil",  "None");
-print_r(array_random($a));
-print_r(array_random($a, 2));
-
-
-function array_random($arr, $num = 1) {
-    shuffle($arr);
-    
-    $r = array();
-    for ($i = 0; $i < $num; $i++) {
-        $r[] = $arr[$i];
-    }
-    return $num == 1 ? $r[0] : $r;
-}
-
-$a = array("Roasted Red Peppers", "Pepperocini",  "Pickles",  "Basil",  "Lettuce",  "Tomatoes",  "Hummus",  "Red Onions",  "Jalapenos",  "Artichoke Hearts",  "None");
-print_r(array_random($a));
-print_r(array_random($a, 2));
-
-function array_random($arr, $num = 1) {
-    shuffle($arr);
-    
-    $r = array();
-    for ($i = 0; $i < $num; $i++) {
-        $r[] = $arr[$i];
-    }
-    return $num == 1 ? $r[0] : $r;
-}
-
-$a = array("Avocado", "Bacon", "None");
-print_r(array_random($a));
-print_r(array_random($a, 2));
+print("<h3>Extras:</h3>");
+$f = array("Avocado ", "Bacon ","None ");
+print(array_random($f,1)."<br><br>");
+echo '<b>Click <a href="index.php">HERE</a> to return back to the designer page.</b><br>';
 ?>

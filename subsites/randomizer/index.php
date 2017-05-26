@@ -16,8 +16,8 @@
 
 <ul>
   <li><a href="../../index.php">Home</a></li>
-  <li><a class="active" href="index.php">Design a Sandwich!</a></li>
-  <li><a href="../randomizer/index.php">Randomize a Sandwich!</a></li>
+  <li><a href="index.php">Design a Sandwich!</a></li>
+  <li><a class="active" href="../randomizer/index.php">Randomize a Sandwich!</a></li>
   <li><a href="../leaderboards/index.php">Leaderboards</a></li>
 </ul>
 
@@ -32,8 +32,7 @@
  
 
 
-<button type="button">Randomize</button> 
-<input type="random" value="random">
+<input type="submit" value="Randomize">
 
 <form>
 </body>
