@@ -1,8 +1,8 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "25.15.21.40:3307";
+$username = "25.15.21.40";
+$password = "password";
 $dbname = "sandwich";
 
 // Create connection

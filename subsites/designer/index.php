@@ -21,14 +21,14 @@
   <li><a href="../leaderboards/index.php">Leaderboards</a></li>
 </ul>
 
-<h3> Sandwich Designer </h3>
-
+<h3 style="color:black"> Sandwich Designer </h3>
+<!-- The checboxes used to design the sandwiches, with all the information being sent into "submit.php" for depositing into a database -->
 <form action="submit.php" method="post">
-Name: <input type="text" name="name"><br>
+<h3 style="color:red">Name:</h3> <input type="text" name="name"><br>
 	
-  <h3>Bread</h3>
+  <h3 style="color:orange">Bread</h3>
   <label>
-    <input type="radio" class="radio" value="Dutch Crunch" name="bread[]" />Dutch Crunch</label>
+    <input type="radio" class="radio" value="Dutch Crunch" name="bread[]" checked/>Dutch Crunch</label>
   <label>
     <input type="radio" class="radio" value="Sourdough Roll" name="bread[]" />Sourdough Roll</label>
   <label>
@@ -39,9 +39,9 @@ Name: <input type="text" name="name"><br>
     <input type="radio" class="radio" value="Sliced Sourdough" name="bread[]" />Sliced Sourdough</label>
   <label>
     <input type="radio" class="radio" value="Gluten Free" name="bread[]" />Gluten Free</label>
-	
+	<hr>
 
- <h3>Meat</h3>
+ <h3 style="color:rgb(204,204,100)">Meat</h3>
   <label>
     <input type="radio" class="radio" value="Turkey" name="meat[]" />Turkey</label>
   <label>
@@ -57,9 +57,10 @@ Name: <input type="text" name="name"><br>
  <label>
     <input type="radio" class="radio" value="Egg Salad" name="meat[]" />Egg Salad</label>
   <label>
-    <input type="radio" class="radio" value="None" name="meat[]" />None</label>
-	
-<h3>Cheese</h3>
+    <input type="radio" class="radio" value="None" name="meat[]" checked/>None</label>
+	<hr>
+
+<h3 style="color:green">Cheese</h3>
  <label>
     <input type="radio" class="radio" value="Provolone" name="cheese[]" />Provolone</label>
 <label>
@@ -69,8 +70,10 @@ Name: <input type="text" name="name"><br>
 <label>
     <input type="radio" class="radio" value="Fresh Mozzarella" name="cheese[]" />Fresh Mozzarella</label>
 <label>
-    <input type="radio" class="radio" value="None" name="cheese[]" />None</label>
-<h3>Condiments</h3>
+    <input type="radio" class="radio" value="None" name="cheese[]" checked/>None</label>
+  <hr>
+
+<h3 style="color:blue">Condiments</h3>
 <label>
     <input type="radio" class="radio" value="Mayo" name="condiments[]" />Mayo</label>
 <label>
@@ -84,8 +87,9 @@ Name: <input type="text" name="name"><br>
 <label>
     <input type="radio" class="radio" value="Balsalmic Oil/Olive Oil" name="condiments[]" />Balsalmic Vin/Olive Oil</label>
 <label>
-    <input type="radio" class="radio" value="None" name="condiments[]" />None</label>
-<h3>Toppings</h3>
+    <input type="radio" class="radio" value="None" name="condiments[]" checked/>None</label>
+  <hr>
+<h3 style="color:indigo">Toppings</h3>
 <label>
     <input type="checkbox" class="radio" value="Roasted Red Peppers, " name="toppings[]" />Roasted Red Peppers</label>
 <label>
@@ -107,14 +111,16 @@ Name: <input type="text" name="name"><br>
 <label>
     <input type="checkbox" class="radio" value="Artichoke Hearts, " name="toppings[]" />Artichoke Hearts</label>
 <label>
-    <input type="checkbox" class="radio" value="None" name="toppings[]" />None</label>
-<h3>Extras</h3>
+    <input type="checkbox" class="radio" value="None" name="toppings[]" checked/>None</label>
+  <hr>
+<h3 style="color:violet">Extras</h3>
 <label>
     <input type="checkbox" class="radio" value="Avocado, " name="extras[]" />Avocado</label>
 <label>
     <input type="checkbox" class="radio" value="Bacon, " name="extras[]" />Bacon</label>
 <label>
-    <input type="checkbox" class="radio" value="None" name="extras[]" />None</label><br>
+    <input type="checkbox" class="radio" value="None" name="extras[]" checked/>None</label><br>
+  <hr>
 <button type="button">Print</button> 
 <input type="submit" value="submit">
 <form>

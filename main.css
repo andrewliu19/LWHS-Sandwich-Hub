@@ -53,6 +53,7 @@ h1 {
   color: white;
 }
 
+
 p {
   max-width: 65%;
   min-width: 500px;
@@ -71,30 +72,7 @@ div {
   width: 100%;
 }
 
-video {
-  background-color: #000000;
-  border: 2px solid black;
-}
 
-.container {
-  display: flex;
-}
-
-.main {
-  padding-left: 30px;
-  min-width: 75%;
-}
-
-.nav {
-  background-color: #FFEE00;
-  max-width: 25%;
-  min-width: 140px;
-  flex: 1;
-}
-
-.nav h1 {
-  padding-left: 20px;
-}
 
 
 
