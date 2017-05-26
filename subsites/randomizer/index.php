@@ -16,12 +16,26 @@
 
 <ul>
   <li><a href="../../index.php">Home</a></li>
-  <li><a href="../designer/index.php">Design a Sandwich!</a></li>
-  <li><a class="active" href="index.php">Randomize a Sandwich!</a></li>
+  <li><a class="active" href="index.php">Design a Sandwich!</a></li>
+  <li><a href="../randomizer/index.php">Randomize a Sandwich!</a></li>
   <li><a href="../leaderboards/index.php">Leaderboards</a></li>
 </ul>
 
-<p> This is sammich huhb </p>
+<h3> Sandwich Randomizer </h3>
+
+<form action="random.php" method="post">
+<h3> Specifications </h3>
+<label>
+    <input type="checkbox" class="checkbox" value="Vegetarian" name="Vegetarian" />Vegetarian</label>
+<label>
+    <input type="checkbox" class="checkbox" value="Gluten-Free" name="Gluten-Free" />Gluten-Free</label>
+ 
+
+
+<button type="button">Randomize</button> 
+<input type="random" value="random">
+
+<form>
 </body>
 
 </html>
