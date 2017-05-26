@@ -2,24 +2,24 @@
 A (mostly) functioning sandwich designer and leaderboard!
 
 The Designer: 
-![Alt text](/images/img.jpg?raw=true "Optional Title")
-![Alt text](/images/img.jpg?raw=true "Optional Title")
+![Alt text](/images/designer1.jpg?raw=true "Optional Title")
+![Alt text](/images/designer2.jpg?raw=true "Optional Title")
 
 The Leaderboards:
-![Alt text](/images/img.jpg?raw=true "Optional Title")
+![Alt text](/images/leaderboards1.jpg?raw=true "Optional Title")
 
 Search and Reorder in the Leaderboards:
-![Alt text](/images/img.jpg?raw=true "Optional Title")
-![Alt text](/images/img.jpg?raw=true "Optional Title")
+![Alt text](/images/leaderboards2.jpg?raw=true "Optional Title")
+![Alt text](/images/leaderboards3.jpg?raw=true "Optional Title")
 
 Review Page:
-![Alt text](/images/img.jpg?raw=true "Optional Title")
+![Alt text](/images/review1.jpg?raw=true "Optional Title")
 
 Reorder in the Review Page:
-![Alt text](/images/img.jpg?raw=true "Optional Title")
+![Alt text](/images/review2.jpg?raw=true "Optional Title")
 
 Sandwich Randomizer:
-![Alt text](/images/img.jpg?raw=true "Optional Title")
+![Alt text](/images/randomizer.jpg?raw=true "Optional Title")
 
 
 
