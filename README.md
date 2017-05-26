@@ -1,6 +1,29 @@
 # LWHS-Sandwich-Hub
 A (mostly) functioning sandwich designer and leaderboard!
 
+The Designer: 
+![Alt text](/images/img.jpg?raw=true "Optional Title")
+![Alt text](/images/img.jpg?raw=true "Optional Title")
+
+The Leaderboards:
+![Alt text](/images/img.jpg?raw=true "Optional Title")
+
+Search and Reorder in the Leaderboards:
+![Alt text](/images/img.jpg?raw=true "Optional Title")
+![Alt text](/images/img.jpg?raw=true "Optional Title")
+
+Review Page:
+![Alt text](/images/img.jpg?raw=true "Optional Title")
+
+Reorder in the Review Page:
+![Alt text](/images/img.jpg?raw=true "Optional Title")
+
+Sandwich Randomizer:
+![Alt text](/images/img.jpg?raw=true "Optional Title")
+
+
+
+
 In order to use Sandwich Hub, download XAMPP, install it, and do the following:
 1. Download these Sandwich Hub files from Github, and place them in /XAMPP/htdocs under their own special folder (for the rest of these instructions, the folder will be called "shub").
 
